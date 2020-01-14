@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<title>Corit.Solutions</title>
+
+<head>
+    <title>View files</title>
+</head>
+
+<meta charset="utf-8">
+<link rel="stylesheet" th:href="@{/css/afterloginstyle.css}">
+<body>
+<div class="login-form">
+    <h2>Document viewer</h2>
+    <form>
+    <form name="file-form" th:action="@{/login}" method="post">
+
+
+        <ul><li><a href="#" th:href="@{/createDocument}">View Files</a></li></ul>
+        <ul><li><a href="#" th:href="@{/createDocument}">Create New File</a></li></ul>
+
+
+    </form>
+    </form>
+</div>
+</body>
+
+</html>

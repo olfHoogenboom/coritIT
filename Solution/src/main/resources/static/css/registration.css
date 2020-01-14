@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(images/slide04.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.login-form{
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    box-shadow: 5px 6px 60px 10px black;
+    border-radius: 10px;;
+}
+
+.login-form h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+.login-form .Invoer
+{
+    position: relative;
+}
+
+.login-form .Invoer input
+{
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    border:none;
+    border-bottom: 2px solid #307c91;
+    outline: none;
+    background: transparent;
+
+}
+.login-form div[type="submit"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background: #307c91;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.terug{
+
+    padding: 20px;
+    float: right;
+    font-size: 2px;
+
+}
+.terug input[type="button"]{
+    border-bottom: none;
+    outline: none;
+    background: #307c91;
+    border:none ;
+    border-radius:10px;
+    color: white;
+}
+.register{
+
+    padding: 20px;
+    float: left;
+    font-size: 5px;
+
+}
+.register input[type="button"]{
+    border-bottom: none;
+    outline: none;
+    background: #307c91;
+    border:none ;
+    border-radius:15px;
+    color: white;
+}
+.knopjes a:link{
+
+    font-size: 12px;
+    border: none;
+    color: #d3d3d3;
+}
+a {
+    text-decoration: none;
+}
+.knopjes a:visited{
+    font-size: 12px;
+    border: none;
+    color: #d3d3d3;
+}
+a:hover{
+    -webkit-stroke-width: 5,3px;
+    -webkit-stroke-color: #307c91;
+    -webkit-fill-color: #307c91;
+    text-shadow: 1px 0px 20px white;
+}
+.knopjes label {
+
+    -webkit-stroke-width: 5,3px;
+    -webkit-stroke-color: #307c91;
+    -webkit-fill-color: #307c91;
+    color: #d3d3d3;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-shadow: 1px 0px 20px white;
+}

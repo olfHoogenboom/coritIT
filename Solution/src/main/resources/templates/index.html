@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>Corit.Solutions</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+
+
+<header id="header" class="alt">
+    <div class="logo"><a th:href="@{/}">Solutions<span>by Corit</span></a></div>
+        <a th:href="@{/login}">Login</a>
+        <a th:href="@{/register}">register</a>
+        <a th:href="@{/contact}">contact</a>
+</header>
+
+<section class="banner full">
+    <article>
+        <img th:src="@{/img/slide01.jpg}" alt="" />
+        <div class="inner">
+            <header>
+                <p>Futuristic plan</p>
+                <h2>Solutions</h2>
+            </header>
+        </div>
+    </article>
+    <article>
+        <img th:src="@{/img/slide02.jpg}" alt="" />
+        <div class="inner">
+            <header>
+                <p>We believe in our project</p>
+                <h2>Who are we</h2>
+            </header>
+        </div>
+    </article>
+    <article>
+        <img th:src="@{/img/slide03.jpg}" alt="" />
+        <div class="inner">
+            <header>
+                <p>the problem</p>
+                <h2>What is our goal</h2>
+            </header>
+        </div>
+    </article>
+    <article>
+        <img th:src="@{/img/slide04.jpg}" alt="" />
+        <div class="inner">
+            <header>
+                <p>Let the app do your administration</p>
+                <h2>Quicker</h2>
+            </header>
+        </div>
+    </article>
+    <article>
+        <img th:src="@{/img/slide05.jpg}" alt="" />
+        <div class="inner">
+            <header>
+                <p>We want to make Administration eco friendly for the world and our clients</p>
+                <h2>Cheaper</h2>
+            </header>
+        </div>
+    </article>
+</section>
+
+
+<section id="one" class="wrapper style2">
+    <div class="inner">
+        <div class="grid-style">
+
+            <div>
+                <div class="box">
+                    <div class="image fit">
+                        <img th:src="@{/img/pic02.jpg}" alt="" />
+                    </div>
+                    <div class="content">
+                        <header class="align-center">
+                            <p>Research</p>
+                            <h2>let us think about the Solution</h2>
+                        </header>
+                        <p>our website provides the Solution to reduce the usage of paper.</p>
+                        <footer class="align-center">
+                            <a href="#" class="button alt">Learn More</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="box">
+                    <div class="image fit">
+                        <img th:src="@{/img/pic03.jpg}" alt="" />
+                    </div>
+                    <div class="content">
+                        <header class="align-center">
+                            <p>Made for you</p>
+                            <h2>For every client a unique platform.</h2>
+                        </header>
+                        <p>our website provides the best Solutions for your business.</p>
+                        <footer class="align-center">
+                            <a href="#" class="button alt">Learn More</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header class="align-center">
+            <p>This is the future</p>
+            <h2>Join Us Now</h2>
+        </header>
+    </div>
+</section>
+
+
+
+</section>
+
+
+
+<footer id="footer">
+    <div class="container">
+        <ul class="icons">
+            <li><a th:href="@{/#}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a th:href="@{/#}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a th:href="@{/#}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a th:href="@{/#}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        &copy; Corit All rights reserved
+    </div>
+</footer>
+
+
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/jquery.scrollex.min.js}"></script>
+<script th:src="@{/js/skel.min.js}"></script>
+<script th:src="@{/js/util.js}"></script>
+<script th:src="@{/js/main.js}"></script>
+
+</body>
+</html>

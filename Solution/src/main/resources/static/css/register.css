@@ -1,0 +1,88 @@
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+.form {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    box-shadow: 5px 6px 60px 10px black;
+    border-radius: 10px;;
+}
+.form h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(/img/slide04.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid darkgreen;
+    border-radius: 8px;
+    outline: none;
+    background: transparent;
+}
+.btn-confirm{
+    background-color:darkgreen;
+    opacity: 0.6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    transition: 0.6s ease;
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>Formulier scherm</title>
+    <link rel="stylesheet" href="/css/Formulier.css">
+</head>
+<body>
+    <div class="form">
+    <form action="/my-handling-form-page" method="post">
+        <div class="user">
+            <h1     style="font-size: 20px;">Uw Gegevens:</h1>
+            <b      style="font-size: 10px;">Velden met een Sterretje (*) zijn verplicht!</b><br>
+            <label>Naam*:<br>
+                <input type="text" size="50" maxlength="" class="userNaam" placeholder="Uw naam..." required>
+            </label><br>
+            <label>Bedrijfsnaam*:<br>
+                <input type="text" size="50" maxlength="" class="userWerk" placeholder="Uw bedrijfsnaam..." required>
+            </label><br>
+            <label>E-Mail*:<br>
+                <input type="email" size="50" maxlength="" class="userMail" placeholder="Uw mail adres..." required>
+            </label><br>
+            <label>Telefoon*:<br>
+                <input type="tel" size="50" minlength="8" maxlength="" class="userTel" placeholder="Uw telefoonnummer..." required>
+            </label><br>
+        </div>
+        <div class="aan">
+            <h1     style="font-size: 20px;">Gegevens Opdrachtgever:</h1>
+            <b      style="font-size: 10px;">Velden met een Sterretje (*) zijn verplicht!</b><br>
+            <label>Naam contact*:<br>
+                <input type="text" size="50" maxlength="" class="aanNaam" placeholder="Naam van opdrachtgever..." required>
+            </label><br>
+            <label>Bedrijfsnaam*:<br>
+                <input type="text" size="50" maxlength="" class="aanWerk" placeholder="Naam bedrijf van opdrachtgever..." required>
+            </label><br>
+            <label>E-Mail*:<br>
+                <input type="email" size="50" maxlength="" class="aanMail" placeholder="Mail adres van opdrachtgever..." required>
+            </label><br>
+            <label>Telefoon*:<br>
+                <input type="tel" size="50" minlength="8" maxlength="" class="aanTel" placeholder="Telefoonnummer van opdrachtgever..." required>
+            </label><br>
+        </div>
+        <div class="uit">
+            <h1 style="font-size: 20px;">Gegevens Uitvoerder:</h1>
+            <b style="font-size: 10px;">Velden met een Sterretje (*) zijn verplicht!</b><br>
+            <label>Naam contact*:<br>
+                <input type="text" size="50" maxlength="" class="uitNaam" placeholder="Naam van uitvoerder..." required>
+            </label><br>
+            <label>Bedrijfsnaam*:<br>
+                <input type="text" size="50" maxlength="" class="uitWerk" placeholder="Naam bedrijf van uitvoerder..." required>
+            </label><br>
+            <label>E-Mail*:<br>
+                <input type="email" size="50" maxlength="" class="uitMail" placeholder="Mail adres van uitvoerder..." required>
+            </label><br>
+            <label>Telefoon*:<br>
+                <input type="tel" size="50" minlength="8" maxlength="" class="uitTel" placeholder="Telefoonnummer van uitvoerder..." required>
+            </label><br>
+        </div>
+        <div class="task">
+            <h1 style="font-size: 20px;">Informatie/Opdracht:</h1>
+            <b style="font-size: 10px;">Velden met een Sterretje (*) zijn verplicht!</b><br>
+            <label>Onderwerp*:<br>
+                <input type="text" size="50" maxlength="" class="taskTask" placeholder="Onderwerp opdracht..." required>
+            </label><br>
+            <label>Opname*:<br>
+                <input type="time" size="50" maxlength="" class="taskTime" required>
+                <input type="date" size="50" maxlength="" class="taskDate" required>
+            </label><br>
+            <label>Deadline*:<br>
+                <input type="time" size="50" maxlength="" class="taskDoneTime" required>
+                <input type="date" size="50" maxlength="" class="taskDoneDate" required>
+            </label><br>
+            <label>Opdracht*:<br>
+                <textarea maxlength="1000" minlength="50" cols="44" rows="5" class="taskDescription" placeholder="Beschrijving opdracht... (Minimaal 50 tekens)" required></textarea>
+            </label><br>
+            <label>Bijlagen:<br>
+                <label for="files" class="uploadbutton">Upload Bestanden... (Max 5)</label>
+                <input type="file"  id="files" name="files" size="50" maxlength="" class="taskFile" multiple accept="application/zip ,application/pdf ,text/* ,image/*" data-file-maxsize="10240" data-file-minsize="0" data-file-limit="5" >
+                <div id="selectedFiles" class="selectedFiles"></div>
+                <script>
+                    var selDiv = "";
+                    document.addEventListener("DOMContentLoaded", init, false);
+                    function init() {
+                        document.querySelector('#files').addEventListener('change', handleFileSelect, false);
+                        selDiv = document.querySelector("#selectedFiles");
+                    }
+                    function handleFileSelect(e) {
+                        if(!e.target.files) return;
+                        selDiv.innerHTML = "";
+                        var files = e.target.files;
+                        for(var i=0; i<files.length; i++) {
+                            var f = files[i];
+                            selDiv.innerHTML += f.name + "<br/>";
+                        }
+                    }
+                </script>
+            </label><br>
+        </div>
+        <button class="send" onclick="TODO saves + confirm mail + send recievers"><span>Opslaan & Verzenden...</span></button>
+        <button class="save" onclick="HTMLtoPDF()"><span>Opslaan...</span></button>
+        <button class="reset" type="reset"><span>Velden Resetten!</span></button><br>
+    </form>
+    <button class="back" onclick=history.back()><span>Terug</span></button>
+    </div>
+    <a href="#" onclick="HTMLtoPDF()">Download PDF</a>
+    <script src="js/jspdf.js"></script>
+    <script src="js/jquery-2.1.3.js"></script>
+    <script src="js/pdfFromHTML.js"></script>
+</body>
+</html>

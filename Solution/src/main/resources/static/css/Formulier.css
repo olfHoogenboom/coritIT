@@ -1,0 +1,364 @@
+*{
+    margin: auto;
+    font-family: Century, serif;
+}
+
+body {
+    display: flex;
+    background-image:url(/img/Formulier.png);
+    background-color: rgba(0, 0, 0,.9);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    position: absolute;
+    min-height: 100%;
+    height: 100%;
+    margin-top: 1%;
+}
+
+.form {
+    display: flex;
+    position: absolute;
+
+    left: 50%;
+    margin-left: -450px;
+    height: 100%;
+    width: 100%;
+}
+
+.user {
+    position: absolute;
+    align-self: center;
+    top: 15px;
+    left: 15px;
+    width: 425px;
+    height: 300px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 166%;
+    color: rgba(255,255,255,.9);
+    background: rgba(0, 0, 0,.7);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border: 2px solid rgba(48,124,145,.9);
+}
+
+.aan {
+    position: absolute;
+    align-self: center;
+    top: 15px;
+    left: 455px;
+    width: 425px;
+    height: 300px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 166%;
+    color: rgba(255, 255, 255, .9);
+    background: rgba(0, 0, 0, .7);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 2px solid rgba(48,124,145,.9);
+}
+
+.uit {
+    position: absolute;
+    align-self: center;
+    top: 330px;
+    left: 15px;
+    width: 425px;
+    height: 300px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 166%;
+    color: rgba(255,255,255,.9);
+    background: rgba(0, 0, 0,.7);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border: 2px solid rgba(48,124,145,.9);
+}
+
+.task {
+    position: absolute;
+    align-self: center;
+    top: 330px;
+    left: 455px;
+    width: 425px;
+    height: 425px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 166%;
+    color: rgba(255,255,255,.9);
+    background: rgba(0, 0, 0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border: 2px solid rgba(48,124,145,.9);
+}
+
+.send {
+    position: absolute;
+    width: 205px;
+    height: 45px;
+    left: 15px;
+    top: 640px;
+    border-radius: 4px;
+    background-color: rgba(48,124,145,.7);
+    border: 2px solid rgba(48,124,145,.7);
+    color: rgba(255,255,255,.9);;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.send span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.send span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: rgb(0,0,0);
+}
+.send:hover span {
+    padding-right: 25px;
+    color: rgb(0,0,0);
+}
+.send:hover span:after {
+    opacity: 1;
+    right: 0;
+    color: rgb(0,0,0);
+}
+.send:hover {
+    background-color: rgba(48,124,145,1);
+}
+
+.save {
+    position: absolute;
+    width: 205px;
+    height: 45px;
+    left: 15px;
+    top: 700px;
+    border-radius: 4px;
+    background-color: rgba(48,124,145,.7);
+    border: 2px solid rgba(48,124,145,.7);
+    color: rgba(255,255,255,.9);;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.save span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.save span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: rgb(0,0,0);
+}
+.save:hover span {
+    padding-right: 25px;
+    color: rgb(0,0,0);
+}
+.save:hover span:after {
+    opacity: 1;
+    right: 0;
+    color: rgb(0,0,0);
+}
+.save:hover {
+    background-color: rgba(48,124,145,1);
+}
+
+.reset {
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    left: 235px;
+    top: 640px;
+    border-radius: 4px;
+    background-color: rgba(250,50,50,.7);
+    border: 2px solid rgba(250,50,50,.7);
+    color: rgba(255,255,255,.9);;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.reset span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.reset span:after {
+    content: "==";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+    color: rgb(0,0,0);
+}
+.reset:hover span {
+    padding-left: 25px;
+    color: rgb(0,0,0);
+}
+.reset:hover span:after {
+    opacity: 1;
+    left: 0;
+    color: rgb(0,0,0);
+}
+.reset:hover {
+    background-color: rgba(255,0,0,1);
+}
+
+.back {
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    left: 235px;
+    top: 700px;
+    border-radius: 4px;
+    background-color: rgba(200,50,50,.7);
+    border: 2px solid rgba(200,50,50,.7);
+    color: rgba(255,255,255,.9);;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.back span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.back span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+    color: rgb(0,0,0);
+}
+.back:hover span {
+    padding-left: 25px;
+    color: rgb(0,0,0);
+}
+.back:hover span:after {
+    opacity: 1;
+    left: 0;
+    color: rgb(0,0,0);
+}
+.back:hover {
+    background-color: rgba(200,0,0,1);
+}
+
+input, textarea {
+    background: rgba(0, 0, 0,.3);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    color: rgba(255,255,255,.8);
+    border:none;
+    border-bottom: 2px solid rgba(48,124,145,.9);
+    border-left: 2px solid rgba(48,124,145,.9);
+    padding: 3px;
+    font-size: 14px;
+}
+
+.taskFile {
+    border: 2px solid rgba(48,124,145,.9);
+    z-index: 5;
+    visibility:visible;
+    display: none;
+}
+
+.uploadbutton {
+    position: absolute;
+    border-radius: 4px;
+    background-color: rgba(48,124,145,.7);
+    border: 2px solid rgba(48,124,145,.9);
+    color: rgba(255,255,255,.9);;
+    text-align: center;
+    width: 250px;
+    height: 20px;
+    font-size: 16px;
+    padding: 3px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.uploadbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.uploadbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: rgb(0,0,0);
+}
+.uploadbutton:hover span {
+    padding-right: 25px;
+    color: rgb(0,0,0);
+}
+.uploadbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+    color: rgb(0,0,0);
+}
+.uploadbutton:hover {
+    background-color: rgba(48,124,145,1);
+}
+
+.selectedFiles {
+    position: absolute;
+    align-self: center;
+    top: 450px;
+    left: -3px;
+    width: 425px;
+    height: 140px;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 166%;
+    color: rgba(255,255,255,.9);
+    background: rgba(0, 0, 0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border: 2px solid rgba(48,124,145,.9);
+    z-index: 5;
+}
